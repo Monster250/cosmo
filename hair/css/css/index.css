@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.prevbtn,
+.nextbtn {
+    cursor: pointer;
+    position: absolute;
+    top: 80%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    color: white;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgb(36, 36, 36);
+    opacity: 0.2;
+}
+
+.nextbtn {
+    right: 0;
+    padding: 16px;
+    /* border-radius: 3px 0 0 3px; */
+}
+
+.prevbtn:hover,
+.nextbtn:hover {
+    background-color: black;
+    opacity: 1;
+}
+
+.mySlides>div {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySlides>div>img {
+    width: 126%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-top: 60px;
+}
+
+.active,
+.dot:hover {
+    background-color: #19A7CE;
+}
+
+#sidekasideshow {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    left: 19%;
+    gap: 20px;
+    color: #d2e6f8;
+}
+
+#sidekasideshow>h1 {
+    font-size: 80px;
+    -webkit-text-stroke: 1px #FEFF86;
+    -webkit-text-fill-color: #FEFF86;
+}
+
+#sidekasideshow>button {
+    padding: 10px;
+    color: #FEFF86;
+    background-color: #146C94;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 10em;
+    line-height: 20px;
+}
+
+#shopbycategory {
+    margin-top: 10px;
+}
+
+#shopbycategory h1 {
+    text-align: center;
+    color: #146C94;
+}
+
+.categorye {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    align-items: center;
+    gap: 20px;
+}
+
+.categorye>img {
+    width: 13%;
+    opacity: 0.8;
+}
+
+.categorye>img:hover {
+    opacity: 1;
+}
+
+#tradingoffer {
+    margin-top: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #146C94;
+}
+
+h1 {
+    color: black;
+    font-size: 34px;
+    -webkit-text-stroke: 1px #15b6e2;
+    -webkit-text-fill-color: #19A7CE;
+}
+
+#conbonof {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+#conbonof>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+#conbonof>div>p {
+    color: #19A7CE;
+    font-size: 13px;
+    height: 100%;
+}
+
+#conbonof>div>img {
+    border-radius: 50%;
+}
+
+#conbonof>div>button {
+    padding: 10px 0px;
+    background-color: white;
+    width: 30%;
+    margin: auto;
+    border: 2px solid #146C94;
+}
+
+#conbonof>div>button:hover {
+    background-color: #ffff86cb;
+}
+
+.banner>img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#finalproduct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.a1>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+#finalproduct>div {
+    width: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+#finalproduct>div>img {
+    width: 100%;
+}
+
+h4 {
+    color: #146C94;
+}
+
+#finalproduct>div>p {
+    color: #84aacb;
+}
+
+#finalproduct>div>button {
+    color: #ffffce;
+    background-color: #19A7CE;
+    padding: 10px 15px;
+    border: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#finalproduct>div>button:hover {
+    color: #19A7CE;
+    background-color: #FEFF86;
+}
+
+#footer {
+    background-color: #146C94;
+}
